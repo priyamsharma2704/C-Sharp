@@ -24,27 +24,13 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
-        int[] nums = [3,2,2,3];
-        int res = RemoveElement(ref nums, 3);
+        int[] nums = [0,1,2,2,3,0,4,2];
+        int res = RemoveElement(ref nums, 2);
         Console.WriteLine(res);
     }
 
     public static int RemoveElement(ref int[] nums, int val)
     {
-        // ArrayList arr = new ArrayList();
-        // for(var i = 0; i < nums.Length; i++)
-        // {
-        //     if(nums[i] != val)
-        //         arr.Add(nums[i]);
-        // }
-        // // foreach(var item in arr)
-        // //     Console.WriteLine(item);
-
-        // int[] ret = arr.Cast<int>().ToArray();
-        // foreach(var item in ret)
-        //     Console.WriteLine(item);
-        // //Console.WriteLine(ret);
-
         int j = 0;
         for(int i = 0 ;i < nums.Length; i++)
         {
