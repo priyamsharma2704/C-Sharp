@@ -21,7 +21,9 @@ class Program
     {
         Console.WriteLine("Hello, World!");
         int[] nums = [0,0,1,1,1,2,2,3,3,4];
-        int res = RemoveDuplicates(nums);
+        int res = 0;
+        // res = RemoveDuplicates(nums);
+        res = RemoveDuplicatesInPlace(nums);
         Console.WriteLine(res);
     }
 
@@ -47,5 +49,24 @@ class Program
 
         Console.WriteLine(nums);
         return i;    
+    }
+
+    public static int RemoveDuplicatesInPlace(int[] nums)
+    {
+        int i = 0, j = 0;
+        for(i = 0 ;i < nums.Length; i++)
+        {
+            if(nums[j] == nums[i])
+            {
+                continue;
+            }
+            
+            if(nums[j] < nums[i])
+            {
+                j++;
+                nums[j] = nums[i];
+            }
+        }
+        return j+1;
     }
 }
