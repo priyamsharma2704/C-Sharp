@@ -1,0 +1,15 @@
+/home/psharma/SourceCodes/C-Sharp/removeElements/bin/Debug/net8.0/removeElements
+/home/psharma/SourceCodes/C-Sharp/removeElements/bin/Debug/net8.0/removeElements.deps.json
+/home/psharma/SourceCodes/C-Sharp/removeElements/bin/Debug/net8.0/removeElements.runtimeconfig.json
+/home/psharma/SourceCodes/C-Sharp/removeElements/bin/Debug/net8.0/removeElements.dll
+/home/psharma/SourceCodes/C-Sharp/removeElements/bin/Debug/net8.0/removeElements.pdb
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/removeElements.GeneratedMSBuildEditorConfig.editorconfig
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/removeElements.AssemblyInfoInputs.cache
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/removeElements.AssemblyInfo.cs
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/removeElements.csproj.CoreCompileInputs.cache
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/removeElements.sourcelink.json
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/removeElements.dll
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/refint/removeElements.dll
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/removeElements.pdb
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/removeElements.genruntimeconfig.cache
+/home/psharma/SourceCodes/C-Sharp/removeElements/obj/Debug/net8.0/ref/removeElements.dll
