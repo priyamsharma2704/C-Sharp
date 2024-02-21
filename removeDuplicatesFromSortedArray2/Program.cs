@@ -1,5 +1,34 @@
 namespace removeDuplicatesFromSortedArray2;
 
+/*
+iven an integer array nums sorted in non-decreasing order, 
+remove some duplicates in-place such that each unique element appears at most twice. 
+The relative order of the elements should be kept the same.
+
+Since it is impossible to change the length of the array in some languages, 
+you must instead have the result be placed in the first part of the array nums. 
+More formally, if there are k elements after removing the duplicates, 
+then the first k elements of nums should hold the final result. 
+It does not matter what you leave beyond the first k elements.
+
+Return k after placing the final result in the first k slots of nums.
+
+Example 1:
+
+Input: nums = [1,1,1,2,2,3]
+Output: 5, nums = [1,1,2,2,3,_]
+Explanation: Your function should return k = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+
+Example 2:
+
+Input: nums = [0,0,1,1,1,1,2,3,3]
+Output: 7, nums = [0,0,1,1,2,3,3,_,_]
+Explanation: Your function should return k = 7, with the first seven elements of nums being 0, 0, 1, 1, 2, 3 and 3 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+
+
+*/
 class Program
 {
     static void Main(string[] args)
@@ -13,27 +42,22 @@ class Program
 
     public static int RemoveDuplicates(int[] nums) 
     {
-        int i = 0;
-        int j = 0;
-        int occurance = 0;
-        for(i = 0; i< nums.Length; i++)
+        if(nums.Length < 3)
+            return nums.Length;
+
+        int prev = 1;
+        int curr = 2;
+        while(curr<nums.Length)
         {
-            if(nums[j] == nums[i])
+            if(nums[curr] == nums[prev] && nums[curr] == nums[prev-1])
+                curr++;
+            else
             {
-                occurance++;
-                continue;
-            }
-
-            if(occurance > 2)
-                j++;
-
-            if(nums[j] < nums[i] && occurance > 2)
-            {
-                j++;
-                nums[j] = nums[i];
-                occurance = 0;
+                prev++;
+                nums[prev] = nums[curr];
+                curr++;
             }
         }
-        return 0;
+        return prev+1;
     }
 }
