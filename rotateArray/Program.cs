@@ -21,6 +21,10 @@ Explanation:
 rotate 1 steps to the right: [99,-1,-100,3]
 rotate 2 steps to the right: [3,99,-1,-100]
 
+Example 3:
+nums: [1,2]
+k : 3
+O/P = [2,1]
 
 */
 class Program
@@ -58,8 +62,14 @@ class Program
 
        public static void rotateInPlace(int[] nums, int k) 
     {
+        if (k == 0 || nums.Length == 1 || nums.Length == k )
+			return;
+
         int len = nums.Length;
         int[] res = new int[len];
+
+        if(k > len)
+            k = k % len;
 
         Array.Reverse(nums, len-k, k);
         Array.Reverse(nums, 0, len-k);
