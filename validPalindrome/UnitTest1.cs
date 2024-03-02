@@ -21,4 +21,16 @@ public class UnitTest1
     {
         Assert.True(Program.IsPalindrome(""));
     }
+
+    [Fact]
+    public void Test4()
+    {
+        Assert.True(Program.IsPalindrome(".,"));
+    }
+
+    [Fact]
+    public void Test5()
+    {
+        Assert.False(Program.IsPalindrome("0P"));
+    }
 }
